@@ -1,0 +1,7 @@
+runtime 'python'
+
+pip 'iron_celery'
+file 'myqueue.py'
+file 'mytasks.py'
+
+exec 'run.py'
