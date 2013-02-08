@@ -1,7 +1,10 @@
 runtime 'python'
 
+full_remote_build true
+
 pip 'iron_celery'
 file 'myqueue.py'
 file 'mytasks.py'
+file 'iron.json'
 
 exec 'run.py'
