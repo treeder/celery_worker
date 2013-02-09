@@ -12,5 +12,6 @@ celery_worker
 1. Now run it: `iron_worker queue mycelery`
 1. Now queue up a task again: `python myqueue.py`. You should get the same result in this terminal, but this time Celery
 is running remotely on IronWorker!  Boom!
-
+1. Finally, let's schedule the worker to run every hour so you always have one running : `iron_worker schedule --run-every 3600 mycelery`.
+Run the schedule command again if you want multiple celeries running.
 
